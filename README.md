@@ -39,7 +39,7 @@ Custom warehouse dataset containing two classes:
 | 0 | Box |
 | 1 | Rack |
 
-The dataset includes images collected from warehouse environments and was prepared in YOLO segmentation format.
+The dataset was prepared in YOLO Segmentation format and used to train a custom warehouse perception model for AMR applications.
 
 ---
 
@@ -96,6 +96,33 @@ The dataset includes images collected from warehouse environments and was prepar
 
 ---
 
+## Applications
+
+This model can be integrated into:
+
+- Autonomous Mobile Robots (AMR)
+- Smart Warehouses
+- Inventory Monitoring Systems
+- Warehouse Automation
+- Industrial Robotics
+- Intelligent Navigation Systems
+
+---
+
+## Use Case in AMR Systems
+
+The segmentation model is designed to support warehouse navigation tasks by enabling the robot to:
+
+- Detect warehouse racks.
+- Detect storage boxes.
+- Understand warehouse layouts.
+- Improve obstacle awareness.
+- Assist autonomous navigation and path planning.
+
+This project serves as a perception module that can be integrated with ROS2-based AMR systems and autonomous warehouse robots.
+
+---
+
 ## Repository Structure
 
 ```text
@@ -120,24 +147,22 @@ warehouse-segmentation-for-amr-navigation
 │
 ├── weights
 │   ├── best.pt
-│   ├── last.pt
-│   └── best.onnx
+│   ├── best.onnx
+│   └── last.pt
 │
 └── warehouse-segmentation-for-amr-navigation.ipynb
 ```
 
 ---
 
-## Applications
+## Model Files
 
-This model can be integrated into:
+Available trained models:
 
-- Autonomous Mobile Robots (AMR)
-- Smart Warehouses
-- Inventory Monitoring Systems
-- Warehouse Automation
-- Industrial Robotics
-- Intelligent Navigation Systems
+- best.pt
+- best.onnx
+
+The ONNX model can be deployed on edge devices and industrial systems.
 
 ---
 
@@ -148,20 +173,15 @@ This model can be integrated into:
 - Train larger YOLOv8 models.
 - Deploy on Raspberry Pi.
 - Integrate with ROS2 Navigation Stack.
-- Real-time inference on AMR platforms.
+- Perform real-time inference on AMR platforms.
 
 ---
 
-## Model Weights
+## Kaggle Notebook
 
-Available in:
+Full training notebook:
 
-```text
-weights/best.pt
-weights/best.onnx
-```
-
-The ONNX model can be deployed on edge devices and industrial systems.
+https://www.kaggle.com/code/fareselgohary003/warehouse-segmentation-for-amr-navigation
 
 ---
 
@@ -169,9 +189,10 @@ The ONNX model can be deployed on edge devices and industrial systems.
 
 ### Fares Elgohary
 
-Mechatronics Engineer | AI & Data Science Engineer
+AI & Data Science Engineer
 
-Skills:
+Specialized in:
+
 - Machine Learning
 - Deep Learning
 - Computer Vision
@@ -181,14 +202,10 @@ Skills:
 - Python
 - PyTorch
 
+### Connect With Me
+
 LinkedIn:
-(Add your LinkedIn profile here)
+https://www.linkedin.com/in/fares-elgohary-91ba22380/
 
 GitHub:
 https://github.com/fareselgohary2003
-
----
-
-## License
-
-This project is released for educational and research purposes.
